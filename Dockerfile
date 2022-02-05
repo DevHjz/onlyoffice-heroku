@@ -1,4 +1,3 @@
 FROM onlyoffice/documentserver
-EXPOSE 8080:8080
-FROM onlyoffice/communityserver
-EXPOSE 80:80
+RUN  sudo docker run -i -t -d -p 443:443 \
+    -v /app/onlyoffice/DocumentServer/data:/var/www/onlyoffice/Data  onlyoffice/documentserver
