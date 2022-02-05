@@ -1,3 +1,6 @@
 build:
   docker:
-    onlyoffice-heroku: Dockerfile
+    web: Dockerfile
+    port: 8080:8080
+    port: 80:80
+    port: 443:443
