@@ -1,3 +1,4 @@
-FROM onlyoffice/documentserver
+FROM collabora/code
 EXPOSE 80:80
 EXPOSE 443:443
+EXPOSE 9980:9980
